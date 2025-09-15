@@ -35,7 +35,7 @@ pmset -g batt | grep -E "(InternalBattery|Battery)" | head -1
 
 # 8. 온도 (가능한 경우)
 echo "8. CPU 온도:"
-sudo powermetrics --samplers smc -n 1 | grep -i "cpu die temperature" | head -1 || echo "온도 정보 없음"
+echo "온도 정보 없음 (root 권한 필요)"
 
 # 9. 메모리 압박 상태
 echo "9. 메모리 압박:"
